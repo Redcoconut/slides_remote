@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font: 13px Helvetica, Arial; }
+      form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
+      form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
+      form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+      #messages { list-style-type: none; margin: 0; padding: 0; }
+      #messages li { padding: 5px 10px; }
+      #messages li:nth-child(odd) { background: #eee; }
+    </style>
+  </head>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="/compjav.js"></script>
+  <body>
+    <ul id="messages"></ul>
+    <!-- <iframe id="calendar" src="https://docs.google.com/presentation/d/e/2PACX-1vR7Cdnis9Y_SnMK_cBGlI5DD45ukOKCmnthBYOBi-W-sbrXU5KhWpDJjhg1h32eebdEVtYXiyoz0qxf/embed?postMessageEvents=true&amp;start=false&amp;loop=false&amp;delayms=3000&amp;slide=1&postMessageEvents=true" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" width="1440" height="839" frameborder="0"></iframe> -->
+    <button onclick="goInFullScreen()">Fullscreen</button>
+    <iframe src="http://slides.com/coconut_d/deck/embed?postMessageEvents=true" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </body>
+</html>
