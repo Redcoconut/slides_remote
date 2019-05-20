@@ -15,11 +15,12 @@ $(function () {
 });
 
 
-function goInFullScreen() {
-  var frame = document.querySelector( 'iframe' );
-  console.log("TESTING")
+function goInPhone() {
+  window.open("/phone","_self")
+  // var frame = document.querySelector( 'iframe' );
+  // console.log("TESTING")
   // Post a message into the frame
-  frame.contentWindow.postMessage( JSON.stringify({ method: 'slide', args: [ 2 ] }), '*' );
+  // frame.contentWindow.postMessage( JSON.stringify({ method: 'slide', args: [ 2 ] }), '*' );
 	// console.log("PRESEED THE FUCLL SCREEN BUTTON")
 	// if(element.requestFullscreen)
 	// 	element.requestFullscreen();
